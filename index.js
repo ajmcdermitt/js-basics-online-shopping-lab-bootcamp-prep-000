@@ -20,7 +20,25 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  var message = "In your cart, you have ";
+  var cartLength = cart.length - 1;
+
+  if (cart.length == 0){
+    message = "Your shopping cart is empty.";
+  } else{
+    for (var i = 0; i <= cartLength; i++){
+      var obj = cart[i];
+      var itemName = Object.keys(obj);
+      var price = obj.hasOwnProperty(itemName);
+      if (i == 0){
+        message += itemName + " at $" + price;
+      }else{
+        message += ", " + itemName + " at " + price;
+      }
+    }
+    message += ".";
+  }
+  return message;
 }
 
 function total() {
