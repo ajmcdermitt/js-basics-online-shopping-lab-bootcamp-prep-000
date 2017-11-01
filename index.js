@@ -50,7 +50,8 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var price = 0;
+  var cartLength = cart.length - 1;
 }
 
 function removeFromCart(item) {
