@@ -50,8 +50,17 @@ function viewCart() {
 }
 
 function total() {
-  var price = 0;
+  var finalPrice = 0;
   var cartLength = cart.length - 1;
+
+  for (var i = 0; i <= cartLength; i++){
+    var obj = cart[i];
+    var itemName = Object.keys(obj);
+    var price = obj[itemName];
+
+    finalPrice += price;
+  }
+  return finalPrice;
 }
 
 function removeFromCart(item) {
