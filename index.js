@@ -34,7 +34,7 @@ function viewCart() {
       if (i == 0){
         message += itemName + " at $" + price;
       }else if (i == cartLength){
-        if (i==2){
+        if (i==1){
           message += " and " + itemName + " at $" + price;
         }else{
           message += ", and " + itemName + " at $" + price;
