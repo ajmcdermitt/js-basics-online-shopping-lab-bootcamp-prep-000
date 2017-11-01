@@ -15,7 +15,7 @@ function addToCart(item) {
     [item]: price
   }
   cart.push(newItem);
-  console.log("${item} has been added to your cart.")
+  console.log("ice cream has been added to your cart.")
   return cart;
 }
 
