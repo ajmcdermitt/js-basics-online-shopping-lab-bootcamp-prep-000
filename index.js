@@ -33,7 +33,14 @@ function viewCart() {
       //var price = obj.hasOwnProperty(itemName);
       if (i == 0){
         message += itemName + " at $" + price;
-      }else{
+      }else if (i == cartLength){
+        if (i==2){
+          message += " and " + itemName + " at $" + price;
+        }else{
+          message += ", and " + itemName + " at $" + price;
+        }
+      }else
+      {
         message += ", " + itemName + " at " + price;
       }
     }
