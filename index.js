@@ -29,7 +29,7 @@ function viewCart() {
     for (var i = 0; i <= cartLength; i++){
       var obj = cart[i];
       var itemName = Object.keys(obj);
-      var price = obj.itemName;
+      var price = obj[itemName];
       //var price = obj.hasOwnProperty(itemName);
       if (i == 0){
         message += itemName + " at $" + price;
