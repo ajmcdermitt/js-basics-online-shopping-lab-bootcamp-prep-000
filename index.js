@@ -41,7 +41,7 @@ function viewCart() {
         }
       }else
       {
-        message += ", " + itemName + " at " + price;
+        message += ", " + itemName + " at $" + price;
       }
     }
     message += ".";
